@@ -57,4 +57,14 @@ public class CustomEditorUtility
 
     return isFoldoutExpandedByTitle[title];
   }
+
+  public static void DrawUnderline(float height = 1f)
+  {
+    var lastRect = GUILayoutUtility.GetLastRect();
+
+    lastRect.y += lastRect.height;
+    lastRect.height = height;
+    
+    EditorGUI.DrawRect(lastRect, Color.gray);
+  }
 }
