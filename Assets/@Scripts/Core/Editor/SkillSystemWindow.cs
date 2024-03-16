@@ -98,7 +98,7 @@ public class SkillSystemWindow : EditorWindow
   {
     var database = _databaseByType[dataType];
 
-    AssetPreview.SetPreviewTextureCacheSize(Mathf.Max(32, database.GetCount));
+    AssetPreview.SetPreviewTextureCacheSize(Mathf.Max(32, 32 + database.GetCount));
 
     EditorGUILayout.BeginHorizontal();
     {
