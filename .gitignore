@@ -76,4 +76,4 @@ crashlytics-build.properties
 /Assets/Plugins/Editor
 
 # Licensed Assets
-/Assets/@Sprites
+/Assets/@Data
