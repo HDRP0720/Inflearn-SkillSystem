@@ -29,7 +29,7 @@ public class SkillSystemWindow : EditorWindow
   private void OnEnable()
   {
     SetupStyle();
-    SetupDatabase(new[] { typeof(Category) });
+    SetupDatabase(new[] { typeof(Category), typeof(Stat) });
   }
   private void OnDisable()
   {

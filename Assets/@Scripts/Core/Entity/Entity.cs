@@ -8,6 +8,9 @@ public enum EEntityControlType { Player, AI }
 
 public class Entity : MonoBehaviour
 {
+  public delegate void TakeDamageHandler(Entity entity, Entity instigator, object causer, float damage);
+  public delegate void DeadHandler(Entity entity);
+  
   #region Variables
   [SerializeField] 
   private Category[] _categories;
@@ -22,11 +25,18 @@ public class Entity : MonoBehaviour
   public EEntityControlType GetControlType => _controlType;
   public IReadOnlyList<Category> GetCategories => _categories;
   public Animator Animator { get; private set; }
+  public Stats Stats { get; private set; }
+  public Entity Target { get; set; }
   #endregion
+
+  public event TakeDamageHandler onTakeDamage;
+  public event DeadHandler onDead;
   
   private void Awake()
   {
     Animator = GetComponent<Animator>();
+    Stats = GetComponent<Stats>();
+    Stats.Setup(this);
   }
   
   public Transform GetTransformSocket(string socketName)
@@ -54,8 +64,28 @@ public class Entity : MonoBehaviour
 
     return null;
   }
+
+  public void TakeDamage(Entity instigator, object causer, float damage)
+  {
+    if (IsDead) return;
+
+    float prevValue = Stats.HPStat.DefaultValue;
+    Stats.HPStat.DefaultValue -= damage;
+    
+    onTakeDamage?.Invoke(this, instigator, causer, damage);
+
+    if (Mathf.Approximately(Stats.HPStat.DefaultValue, 0f))
+      OnDead();
+  }
+
+  private void OnDead()
+  {
+    onDead?.Invoke(this);
+  }
   
   public bool IsPlayer => _controlType == EEntityControlType.Player;
+
+  public bool IsDead => Stats.HPStat != null && Mathf.Approximately(Stats.HPStat.DefaultValue, 0f);
 
   public bool HasCategory(Category category) => _categories.Any(x => x.GetID == category.GetID);
 }

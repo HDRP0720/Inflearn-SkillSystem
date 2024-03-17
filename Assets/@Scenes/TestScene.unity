@@ -2541,6 +2541,7 @@ GameObject:
   - component: {fileID: 1798671953}
   - component: {fileID: 1798671952}
   - component: {fileID: 1798671954}
+  - component: {fileID: 1798671955}
   m_Layer: 0
   m_Name: xbot-Friend
   m_TagString: Untagged
@@ -2602,6 +2603,48 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _categories: []
   _controlType: 1
+--- !u!114 &1798671955
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1798671951}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ebf81e26342b7c44d98b79e9fad3627f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _hpStat: {fileID: 11400000, guid: 0043ae3bd7bb56045a17ed8844005500, type: 2}
+  _skillCostStat: {fileID: 11400000, guid: 462f5e0f28fe6c1409240bb464dbe320, type: 2}
+  _statOverrides:
+  - _stat: {fileID: 11400000, guid: 5fd3be2ed4eceab48bf2669b247cf016, type: 2}
+    _isUseOverride: 0
+    _overrideDefaultValue: 0
+  - _stat: {fileID: 11400000, guid: bbade454204740b48bbdec8748223433, type: 2}
+    _isUseOverride: 0
+    _overrideDefaultValue: 0
+  - _stat: {fileID: 11400000, guid: 3e48b8009aa62c44fa9f878112542477, type: 2}
+    _isUseOverride: 0
+    _overrideDefaultValue: 0
+  - _stat: {fileID: 11400000, guid: 1b65e45a87349464797c542690e1c3de, type: 2}
+    _isUseOverride: 0
+    _overrideDefaultValue: 0
+  - _stat: {fileID: 11400000, guid: 0043ae3bd7bb56045a17ed8844005500, type: 2}
+    _isUseOverride: 0
+    _overrideDefaultValue: 0
+  - _stat: {fileID: 11400000, guid: ac676066e55e0c048ab95947c7b832ac, type: 2}
+    _isUseOverride: 0
+    _overrideDefaultValue: 0
+  - _stat: {fileID: 11400000, guid: 669ea8c65be6a2040bca358487958d8c, type: 2}
+    _isUseOverride: 0
+    _overrideDefaultValue: 0
+  - _stat: {fileID: 11400000, guid: 462f5e0f28fe6c1409240bb464dbe320, type: 2}
+    _isUseOverride: 0
+    _overrideDefaultValue: 0
+  - _stat: {fileID: 11400000, guid: 8a4ccae986474c5499469110cea1891d, type: 2}
+    _isUseOverride: 0
+    _overrideDefaultValue: 0
 --- !u!1 &1826821146
 GameObject:
   m_ObjectHideFlags: 0
@@ -5922,6 +5965,7 @@ GameObject:
   - component: {fileID: 4883144608234735828}
   - component: {fileID: 1523420582204396206}
   - component: {fileID: 5228602797120967279}
+  - component: {fileID: 5228602797120967280}
   m_Layer: 0
   m_Name: Kachujin G Rosales
   m_TagString: Untagged
@@ -5943,6 +5987,48 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _categories: []
   _controlType: 0
+--- !u!114 &5228602797120967280
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5228602797120967278}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ebf81e26342b7c44d98b79e9fad3627f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _hpStat: {fileID: 11400000, guid: 0043ae3bd7bb56045a17ed8844005500, type: 2}
+  _skillCostStat: {fileID: 11400000, guid: 462f5e0f28fe6c1409240bb464dbe320, type: 2}
+  _statOverrides:
+  - _stat: {fileID: 11400000, guid: 5fd3be2ed4eceab48bf2669b247cf016, type: 2}
+    _isUseOverride: 0
+    _overrideDefaultValue: 0
+  - _stat: {fileID: 11400000, guid: bbade454204740b48bbdec8748223433, type: 2}
+    _isUseOverride: 0
+    _overrideDefaultValue: 0
+  - _stat: {fileID: 11400000, guid: 3e48b8009aa62c44fa9f878112542477, type: 2}
+    _isUseOverride: 0
+    _overrideDefaultValue: 0
+  - _stat: {fileID: 11400000, guid: 1b65e45a87349464797c542690e1c3de, type: 2}
+    _isUseOverride: 0
+    _overrideDefaultValue: 0
+  - _stat: {fileID: 11400000, guid: 0043ae3bd7bb56045a17ed8844005500, type: 2}
+    _isUseOverride: 0
+    _overrideDefaultValue: 0
+  - _stat: {fileID: 11400000, guid: ac676066e55e0c048ab95947c7b832ac, type: 2}
+    _isUseOverride: 0
+    _overrideDefaultValue: 0
+  - _stat: {fileID: 11400000, guid: 669ea8c65be6a2040bca358487958d8c, type: 2}
+    _isUseOverride: 0
+    _overrideDefaultValue: 0
+  - _stat: {fileID: 11400000, guid: 462f5e0f28fe6c1409240bb464dbe320, type: 2}
+    _isUseOverride: 0
+    _overrideDefaultValue: 0
+  - _stat: {fileID: 11400000, guid: 8a4ccae986474c5499469110cea1891d, type: 2}
+    _isUseOverride: 0
+    _overrideDefaultValue: 0
 --- !u!4 &5244085789904422825
 Transform:
   m_ObjectHideFlags: 0
@@ -6178,6 +6264,7 @@ GameObject:
   - component: {fileID: 4910553554802901099}
   - component: {fileID: 1352740856652814865}
   - component: {fileID: 5723541709808163538}
+  - component: {fileID: 5723541709808163539}
   m_Layer: 0
   m_Name: xbot-Enemy
   m_TagString: Untagged
@@ -6199,6 +6286,48 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _categories: []
   _controlType: 1
+--- !u!114 &5723541709808163539
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5723541709808163537}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ebf81e26342b7c44d98b79e9fad3627f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _hpStat: {fileID: 11400000, guid: 0043ae3bd7bb56045a17ed8844005500, type: 2}
+  _skillCostStat: {fileID: 11400000, guid: 462f5e0f28fe6c1409240bb464dbe320, type: 2}
+  _statOverrides:
+  - _stat: {fileID: 11400000, guid: 5fd3be2ed4eceab48bf2669b247cf016, type: 2}
+    _isUseOverride: 0
+    _overrideDefaultValue: 0
+  - _stat: {fileID: 11400000, guid: bbade454204740b48bbdec8748223433, type: 2}
+    _isUseOverride: 0
+    _overrideDefaultValue: 0
+  - _stat: {fileID: 11400000, guid: 3e48b8009aa62c44fa9f878112542477, type: 2}
+    _isUseOverride: 0
+    _overrideDefaultValue: 0
+  - _stat: {fileID: 11400000, guid: 1b65e45a87349464797c542690e1c3de, type: 2}
+    _isUseOverride: 0
+    _overrideDefaultValue: 0
+  - _stat: {fileID: 11400000, guid: 0043ae3bd7bb56045a17ed8844005500, type: 2}
+    _isUseOverride: 0
+    _overrideDefaultValue: 0
+  - _stat: {fileID: 11400000, guid: ac676066e55e0c048ab95947c7b832ac, type: 2}
+    _isUseOverride: 0
+    _overrideDefaultValue: 0
+  - _stat: {fileID: 11400000, guid: 669ea8c65be6a2040bca358487958d8c, type: 2}
+    _isUseOverride: 0
+    _overrideDefaultValue: 0
+  - _stat: {fileID: 11400000, guid: 462f5e0f28fe6c1409240bb464dbe320, type: 2}
+    _isUseOverride: 0
+    _overrideDefaultValue: 0
+  - _stat: {fileID: 11400000, guid: 8a4ccae986474c5499469110cea1891d, type: 2}
+    _isUseOverride: 0
+    _overrideDefaultValue: 0
 --- !u!4 &5761918882805793566
 Transform:
   m_ObjectHideFlags: 0

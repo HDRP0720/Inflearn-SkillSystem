@@ -21,7 +21,7 @@ public class IdentifiedObjectEditor : Editor
 
   private readonly Dictionary<string, bool> _isFoldoutExpandedByTitle = new();
 
-  protected void OnEnable()
+  protected virtual void OnEnable()
   {
     GUIUtility.keyboardControl = 0;
 
