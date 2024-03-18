@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _categories: []
   _icon: {fileID: 0}
-  _id: -1
+  _id: 3
   _codeName: EFFECT_DURATION_INCREASE_RATE
   _displayName: "\uD6A8\uACFC \uC9C0\uC18D \uC2DC\uAC04 \uC99D\uAC00\uC728"
   _description: 

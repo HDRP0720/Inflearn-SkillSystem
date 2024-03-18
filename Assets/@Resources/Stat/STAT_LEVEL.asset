@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _categories: []
   _icon: {fileID: 0}
-  _id: -1
+  _id: 5
   _codeName: LEVEL
   _displayName: "\uB808\uBCA8"
   _description: 

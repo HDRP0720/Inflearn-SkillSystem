@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _categories: []
   _icon: {fileID: 0}
-  _id: -1
+  _id: 8
   _codeName: SKILL_POINT
   _displayName: "\uC2A4\uD0AC \uD3EC\uC778\uD2B8"
   _description: 

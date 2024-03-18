@@ -11,6 +11,9 @@ public class Entity : MonoBehaviour
   public delegate void TakeDamageHandler(Entity entity, Entity instigator, object causer, float damage);
   public delegate void DeadHandler(Entity entity);
   
+  public event TakeDamageHandler onTakeDamage;
+  public event DeadHandler onDead;
+  
   #region Variables
   [SerializeField] 
   private Category[] _categories;
@@ -26,17 +29,20 @@ public class Entity : MonoBehaviour
   public IReadOnlyList<Category> GetCategories => _categories;
   public Animator Animator { get; private set; }
   public Stats Stats { get; private set; }
+  public EntityMovement Movement { get; private set; }
   public Entity Target { get; set; }
   #endregion
-
-  public event TakeDamageHandler onTakeDamage;
-  public event DeadHandler onDead;
   
   private void Awake()
   {
     Animator = GetComponent<Animator>();
+    
     Stats = GetComponent<Stats>();
     Stats.Setup(this);
+
+    Movement = GetComponent<EntityMovement>();
+    if (Movement != null)
+      Movement.Setup(this);
   }
   
   public Transform GetTransformSocket(string socketName)
@@ -80,6 +86,9 @@ public class Entity : MonoBehaviour
 
   private void OnDead()
   {
+    if (Movement != null)
+      Movement.enabled = false;
+    
     onDead?.Invoke(this);
   }
   

@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _categories: []
   _icon: {fileID: 0}
-  _id: -1
+  _id: 0
   _codeName: COOLDOWN_INCREASE_RATE
   _displayName: "\uC7AC\uC0AC\uC6A9 \uB300\uAE30\uC2DC\uAC04 \uC99D\uAC00\uC728"
   _description: 

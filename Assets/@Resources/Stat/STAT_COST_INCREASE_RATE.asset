@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _categories: []
   _icon: {fileID: 0}
-  _id: -1
+  _id: 1
   _codeName: COST_INCREASE_RATE
   _displayName: "\uAE30\uC220 \uC790\uC6D0 \uC18C\uBAA8\uC728"
   _description: 

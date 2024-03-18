@@ -16,9 +16,10 @@ public class IODatabase : ScriptableObject
 
   private void SetID(IdentifiedObject target, int id)
   {
-    var field = typeof(IdentifiedObject).GetField("id", BindingFlags.NonPublic | BindingFlags.Instance);
-    
-    field.SetValue(target, id);
+    var field = typeof(IdentifiedObject).GetField("_id", BindingFlags.NonPublic | BindingFlags.Instance);
+
+    if (field != null)
+      field.SetValue(target, id);
     
 #if UNITY_EDITOR
     EditorUtility.SetDirty(target);
@@ -27,7 +28,7 @@ public class IODatabase : ScriptableObject
 
   private void ReorderData()
   {
-    var field = typeof(IdentifiedObject).GetField("id", BindingFlags.NonPublic | BindingFlags.Instance);
+    var field = typeof(IdentifiedObject).GetField("_id", BindingFlags.NonPublic | BindingFlags.Instance);
     for (int i = 0; i < data.Count; i++)
     {
       field.SetValue(data[i], i);
