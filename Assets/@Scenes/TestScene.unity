@@ -348,6 +348,78 @@ Transform:
   - {fileID: 1826821147}
   m_Father: {fileID: 839481160}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &230591525
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 230591527}
+  - component: {fileID: 230591526}
+  - component: {fileID: 230591528}
+  m_Layer: 0
+  m_Name: GameObject
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &230591526
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 230591525}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 817f616e1895f1945b7b46fca4d53d80, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!4 &230591527
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 230591525}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!54 &230591528
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 230591525}
+  serializedVersion: 4
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &239892123
 GameObject:
   m_ObjectHideFlags: 0
@@ -2560,6 +2632,7 @@ GameObject:
   - component: {fileID: 1798671954}
   - component: {fileID: 1798671955}
   - component: {fileID: 1798671956}
+  - component: {fileID: 1798671960}
   m_Layer: 0
   m_Name: xbot-Friend
   m_TagString: Untagged
@@ -2749,6 +2822,18 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &1798671960
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1798671951}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: af2a932a1a6c6bc4f86d10684c39ca01, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1826821146
 GameObject:
   m_ObjectHideFlags: 0
@@ -6107,7 +6192,7 @@ GameObject:
   - component: {fileID: 5228602797120967280}
   - component: {fileID: 5228602797120967281}
   - component: {fileID: 5228602797120967285}
-  - component: {fileID: 5228602797120967286}
+  - component: {fileID: 5228602797120967287}
   m_Layer: 0
   m_Name: Kachujin G Rosales
   m_TagString: Untagged
@@ -6269,7 +6354,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f232aee5dab37a44894cd6d41de03052, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &5228602797120967286
+--- !u!114 &5228602797120967287
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -6278,10 +6363,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 5228602797120967278}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 858b4a41632b8094b96571c7c3c058b3, type: 3}
+  m_Script: {fileID: 11500000, guid: af2a932a1a6c6bc4f86d10684c39ca01, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rollDistance: 5
 --- !u!4 &5244085789904422825
 Transform:
   m_ObjectHideFlags: 0
@@ -6522,6 +6606,7 @@ GameObject:
   - component: {fileID: 5723541709808163538}
   - component: {fileID: 5723541709808163539}
   - component: {fileID: 5723541709808163540}
+  - component: {fileID: 5723541709808163544}
   m_Layer: 0
   m_Name: xbot-Enemy
   m_TagString: Untagged
@@ -6671,6 +6756,18 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &5723541709808163544
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5723541709808163537}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: af2a932a1a6c6bc4f86d10684c39ca01, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &5761918882805793566
 Transform:
   m_ObjectHideFlags: 0
@@ -8664,3 +8761,4 @@ SceneRoots:
   - {fileID: 4883144608234735828}
   - {fileID: 4910553554802901099}
   - {fileID: 1798671953}
+  - {fileID: 230591527}
