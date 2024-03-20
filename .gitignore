@@ -77,3 +77,4 @@ crashlytics-build.properties
 
 # Licensed Assets
 /Assets/@Data
+/Assets/Plugins
